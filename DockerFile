@@ -1,0 +1,9 @@
+FROM golang
+
+ADD main.go /go/src/
+RUN go get github.com/gorilla/websocket
+RUN printf "go run /go/src/main.go" > /go/src/run.sh 
+RUN chmod +x /go/src/run.sh
+RUN chmod +x /go/src/main.go
+ENTRYPOINT /go/src/run.sh
+
