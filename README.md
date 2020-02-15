@@ -1,5 +1,5 @@
 # BinanceWebSocketReaderInGo
-# copyright Mirambek Nagashbekov
+# copyright Mirambek 
 Binance bitcoin depth market reader in Go
 
 To run in docker run this command in terminal:  
